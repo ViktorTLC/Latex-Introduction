@@ -1,0 +1,21 @@
+\section{Tables}
+
+Let's look at some tables now.
+
+\begin{table}[ht]
+    \centering
+    \caption{My first table}
+    \begin{tabular}{|p{0.1\textwidth}|cr|}
+    % cr: centered, round. | for vertical-lines.
+        \hline
+        really long column name & column 2 & column 3 \\
+        1 &  &  \\ % "&" for allignment
+        \hline
+        a & b & c\\
+        d & e & f\\
+        \hline
+    \end{tabular}
+    \label{tab:my_label}
+\end{table}
+
+% Generate table from .csv files:  https://www.tablesgenerator.com/

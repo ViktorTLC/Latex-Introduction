@@ -1,0 +1,62 @@
+\documentclass[a4paper, 12pt]{article} %[optional paper size, landscape]
+\usepackage[utf8]{inputenc}
+
+% Mount the package to be used.
+\usepackage{graphicx} % thumbs, dollars...
+\usepackage{url}
+\usepackage[margin = 2cm]{geometry}
+
+\usepackage[bottom]{footmisc}
+\usepackage{marvosym} % for Batman symbol
+\usepackage{wasysym}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{amsmath}
+
+\title{Latex Introduction - Devil Ray }
+\author{Viktor Chao}
+\date{June 2018}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\vspace{3cm}
+This space is intentionally left blank.
+
+\newpage
+
+\section{Introduction}
+\subsection{ordered}
+this section, we'll take a look at the powerful tool - Latex.
+hello world! Without section command, there will be no indented feature in the begin of the paragraph.
+
+\subsection{unordered}
+Here is some text it is the first paragraph of my document. Second sentence follows the first.
+
+I'm writing on line 13, bit it's on the same line.\\
+Here is a new line. % This is a comment, it will not be printed.
+
+Leaving a blank line starts a new paragraph w/ indented feature. \cite{maxwell1992thermodynamics}
+
+\vspace{1cm}
+
+\input{list.tex}
+
+    \pagebreak
+
+\input{Table.tex}
+    
+%\input{Fig1.tex}
+\input{maths.tex}
+
+\input{Challenge.tex}
+
+%\input{bibliography.bib}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{bibliography.bib}
+
+\end{document}
